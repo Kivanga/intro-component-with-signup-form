@@ -162,3 +162,36 @@ input.error {
     text-decoration: none;
     font-weight: var(--fw-bold);
 }
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    body {
+        background-image: url('./images/bg-intro-desktop.png');
+        padding: 0 2rem;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+        min-height: 100vh;
+    }
+
+    .intro {
+        flex: 1;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .form-section {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    .signup-form {
+        padding: 2.5rem;
+    }
+}
