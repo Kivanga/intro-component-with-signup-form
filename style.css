@@ -27,3 +27,138 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size);
+    background-color: var(--red);
+    background-image: url('./images/bg-intro-mobile.png');
+    min-height: 100vh;
+    padding: 5rem 1.5rem;
+}
+
+/* Mobile First Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.intro {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricing-banner {
+    background: var(--blue);
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 8px 0 rgba( 0, 0, 0, .15 );
+}
+
+.pricing-banner span {
+    font-weight: var(--fw-bold);
+}
+
+/* Form Styles */
+.signup-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 8px 0 rgba( 0, 0, 0, .15 );
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--grayish-blue);
+    border-radius: .25rem;
+    font-family: inherit;
+    font-weight: var(--fw-semi-bold);
+}
+
+input::placeholder {
+    color: var(--dark-blue);
+    font-weight: var(--fw-bold);
+    opacity: .8;
+}
+
+input.error {
+    border-color: var(--red);
+    padding: 2.5rem;
+}
+
+.error-msg {
+    display: none;
+    color: var(--red);
+    font-size: .75rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: .25rem;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submit-btn {
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: .05rem;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.submit-btn:hover {
+    opacity: .8;
+}
+
+.terms {
+    color: var(--grayish-blue);
+    font-size: .75rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.terms a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
