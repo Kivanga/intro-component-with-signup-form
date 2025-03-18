@@ -21,7 +21,6 @@ form.addEventListener('submit', (e) => {
 
     inputs.forEach((input, index) => {
         const isValid = input.type === 'email' ? validateEmail(input.value) : input.value.trim() !== '';
-        // console.log(isValid, input, index);
         
 
         if(!isValid) {
